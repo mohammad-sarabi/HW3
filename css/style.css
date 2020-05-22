@@ -1,3 +1,14 @@
+* {
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   direction: rtl;
 }
@@ -62,8 +73,36 @@ body {
   left: 0;
 }
 
-.section1 {
-  height: 500px;
+.section1 .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.section1 .text span {
+  color: #007f62;
+  border-bottom: 3px solid #007f62;
+  padding-bottom: 10px;
+}
+
+.section1 .text h2 {
+  color: #007f62;
+}
+
+.section1 .backgrand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .section2 {
@@ -78,16 +117,85 @@ body {
   background-size: cover;
 }
 
-.section2 .row .phonMakeup {
+.section2 .row .iconScroll {
+  overflow-x: scroll;
+}
+
+.section2 .row .iconScroll .iconsBorders {
+  min-width: 72px;
+  min-height: 72px;
+  border-radius: 50%;
+  border: 1px solid #007f62;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2 .row .iconScroll .icon1 {
+  width: 40px;
+  height: 34px;
+  opacity: 0.9;
+}
+
+.section2 .row .iconScroll .icon2 {
+  width: 21px;
+  height: 40px;
+}
+
+.section2 .row .iconScroll .icon3 {
+  width: 40px;
+  height: 24px;
+}
+
+.section2 .row .iconScroll .icon4 {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+}
+
+.section2 .row .iconScroll .icon5 {
+  width: 39px;
+  height: 39px;
+}
+
+.section2 .row .iconScroll .icon6 {
+  width: 40px;
+  height: 37px;
+}
+
+.section2 .row .phonMakeupfather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2 .row .phonMakeupfather .phonMakeup {
   width: 300px;
   height: 587px;
   background-image: url(../img/mobile.png);
   background-size: cover;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .icon {
-    margin-top: 80px;
+@media (min-width: 768px) {
+  .text {
+    margin-top: 101px;
+    padding-left: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

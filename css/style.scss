@@ -7,6 +7,14 @@ $praimeryColor: #007f62;
 @mixin none {
   display: none;
 }
+*{
+  padding: 0;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 
 body {
   direction: rtl;
@@ -22,8 +30,6 @@ body {
   .logo {
     height: 165px;
     background-image: url(../img/009_logo_Bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
     padding: 0;
     display: flex;
@@ -61,7 +67,27 @@ body {
 }
 
 .section1 {
-  height: 500px;
+ 
+  .text{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    span{
+      color: $praimeryColor;
+      border-bottom: 3px solid $praimeryColor;
+      padding-bottom: 10px;
+    }
+    h2{
+      color: $praimeryColor;
+    }
+    p{
+
+    }
+  }
+  .backgrand{
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .section2 {
@@ -76,28 +102,74 @@ body {
     background-size: cover;
   }
   .row {
-    .iconScroll{
-      .icon{
-        
+    .iconScroll {
+      overflow-x: scroll;
+      .iconsBorders {
+          min-width: 72px;
+          min-height: 72px;
+        border-radius: 50%;
+        border: 1px solid $praimeryColor;
+
+        margin:20px;
+        display: flex;
+        @include flexCenter();
+        .icon {
+        }
+      }
+      .icon1 {
+       
+        width: 40px;
+        height: 34px;
+        opacity: 0.9;
+      }
+      .icon2 {
+        width: 21px;
+        height: 40px;
+      }
+      .icon3 {
+        width: 40px;
+        height: 24px;
+      }
+      .icon4 {
+        width: 40px;
+        height: 40px;
+
+        background-color: #ffffff;
+      }
+      .icon5 {
+        width: 39px;
+        height: 39px;
+      }
+      .icon6 {
+        width: 40px;
+        height: 37px;
+       
       }
     }
-    .phonMakeup {
-      width: 300px;
-      height: 587px;
-      background-image: url(../img/mobile.png);
-      background-size: cover;
+    .phonMakeupfather {
+      @include flexCenter();
+      .phonMakeup {
+        width: 300px;
+        height: 587px;
+        background-image: url(../img/mobile.png);
+        background-size: cover;
+      }
     }
   }
 }
 
-@media(min-width:700px){
-    html{
-    background-color: greenyellow;
-    }
+@media (min-width: 768px) {
+  body {
+    // background-color: greenyellow;
+  }
+  .text{
+    margin-top: 101px;
+    padding-left: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
 }
-
-
-
 
 // @media (min-width: 768px) and (max-width: 991.98px) {
 //   .icon {
