@@ -15,14 +15,14 @@ body {
 
 .navbar {
   direction: ltr;
-  height: 80px;
   -webkit-box-shadow: -2.5px 4.3px 15px 0 #e0e0e0;
           box-shadow: -2.5px 4.3px 15px 0 #e0e0e0;
   background-color: #ffffff;
 }
 
 .header .logo {
-  height: 165px;
+  height: 196px;
+  min-width: 100px;
   background-image: url(../img/009_logo_Bg.png);
   background-size: cover;
   padding: 0;
@@ -73,27 +73,30 @@ body {
   left: 0;
 }
 
-.section1 .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.section1 .text span {
+.section1 .text .textContainer span {
   color: #007f62;
   border-bottom: 3px solid #007f62;
   padding-bottom: 10px;
 }
 
-.section1 .text h2 {
+.section1 .text .textContainer h2 {
   color: #007f62;
+  padding-bottom: 30px;
+}
+
+.section1 .text .textContainer p {
+  direction: rtl;
+  padding-top: 30px;
+  width: 288px;
+  height: 113px;
+  font-family: Shabnam-FD;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
 }
 
 .section1 .backgrand {
@@ -103,10 +106,6 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-}
-
-.section2 {
-  height: 800px;
 }
 
 .section2 .waves1 {
@@ -190,12 +189,227 @@ body {
   background-size: cover;
 }
 
+.section2 .row .text2 h2 {
+  color: #007f62;
+  width: 308px;
+  height: 27px;
+  font-family: Shabnam-FD;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.75px;
+  text-align: left;
+}
+
+.section2 .row .text2 p {
+  padding-right: 46px;
+  width: 309px;
+  height: 113px;
+  font-family: Shabnam-FD;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #000000;
+}
+
+.section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section3 .row {
+  margin: 5px;
+  width: 1170px;
+  border-radius: 30px;
+  -webkit-box-shadow: 2.5px 4.3px 25px 0 #e5e5e5;
+          box-shadow: 2.5px 4.3px 25px 0 #e5e5e5;
+}
+
+.section3 .row .downlodIcondiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section3 .row .informtion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section3 .row .informtion h2 {
+  padding: 47px 0;
+  font-family: Shabnam-FD;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #007f62;
+}
+
+.section3 .row .informtion p {
+  padding: 18px 0;
+  font-family: Shabnam-FD;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.section3 .row .informtion .inputButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 33px 0;
+}
+
+.section3 .row .informtion .inputButton input {
+  width: 290px;
+  height: 50px;
+  border-radius: 25px;
+  border: solid 1px #eeeeee;
+  background-color: #fafafa;
+  outline: none;
+  margin-bottom: 21px;
+}
+
+.section3 .row .informtion .inputButton button {
+  width: 140px;
+  height: 50px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+          box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e35325), to(#ff8a65));
+  background-image: linear-gradient(to top, #e35325, #ff8a65);
+  color: white;
+}
+
+.section3 .row .informtion p {
+  font-family: Shabnam-FD;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.section3 .row .informtion .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section3 .row .informtion .buttons .btn1 {
+  width: 160px;
+  height: 50px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 6px 15px 0 rgba(0, 127, 98, 0.25);
+          box-shadow: 0px 6px 15px 0 rgba(0, 127, 98, 0.25);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#00a680), to(#00f4bd));
+  background-image: linear-gradient(to top, #00a680, #00f4bd);
+  outline: none;
+  color: white;
+}
+
+.section3 .row .informtion .buttons .btn2 {
+  width: 160px;
+  height: 50px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 6px 15px 0 rgba(0, 127, 98, 0.25);
+          box-shadow: 0px 6px 15px 0 rgba(0, 127, 98, 0.25);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#00a680), to(#00f4bd));
+  background-image: linear-gradient(to top, #00a680, #00f4bd);
+  outline: none;
+  color: white;
+}
+
+.section3 .row .informtion .buttons .btn3 {
+  width: 160px;
+  height: 50px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 6px 15px 0 rgba(0, 127, 98, 0.25);
+          box-shadow: 0px 6px 15px 0 rgba(0, 127, 98, 0.25);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#00a680), to(#00f4bd));
+  background-image: linear-gradient(to top, #00a680, #00f4bd);
+  outline: none;
+  color: white;
+}
+
+.section4 .bgSafar {
+  height: 272px;
+  opacity: 0.3;
+  background-image: url(../img/023_amadegisafar.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 1032px) {
+  .text {
+    width: 100wh;
+  }
+}
+
 @media (min-width: 768px) {
   .text {
-    margin-top: 101px;
-    padding-left: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-top: 67px;
+    margin-right: 25px;
+  }
+  .textContainer {
+    position: absolute;
   }
 }
 /*# sourceMappingURL=style.css.map */
