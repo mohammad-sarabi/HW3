@@ -1,4 +1,6 @@
-* {
+body,
+html {
+  margin: 0;
   padding: 0;
 }
 
@@ -21,10 +23,8 @@ body {
 }
 
 .header .logo {
-  height: 196px;
-  min-width: 100px;
-  background-image: url(../img/009_logo_Bg.png);
-  background-size: cover;
+  min-height: 100px;
+  min-width: 306px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,14 +35,34 @@ body {
   color: #007f62;
 }
 
-.header .logo img {
+.header .logo .camel {
   width: 72px;
   height: 72px;
+}
+
+.header .logo .camel img {
+  height: 100%;
 }
 
 .nav {
   height: 100px;
   font-size: 11px;
+}
+
+.nav button {
+  width: 80px;
+  height: 40px;
+  margin-right: 12px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+          box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e35325), to(#ff8a65));
+  background-image: linear-gradient(to top, #e35325, #ff8a65);
+  color: white;
+}
+
+.nav button:hover {
+  color: white;
 }
 
 .icon {
@@ -52,19 +72,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.icon button {
-  width: 80px;
-  height: 40px;
-  margin-top: 27px;
-  margin-right: 12px;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
-          box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#e35325), to(#ff8a65));
-  background-image: linear-gradient(to top, #e35325, #ff8a65);
-  color: white;
 }
 
 .icon img {
@@ -300,6 +307,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 33px 0;
 }
 
@@ -388,23 +398,64 @@ body {
   color: white;
 }
 
-.section4 .bgSafar {
-  height: 272px;
-  opacity: 0.3;
-  background-image: url(../img/023_amadegisafar.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.section5 .text h2 {
+  font-family: Shabnam-FD;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #007f62;
+}
+
+.section5 .text p {
+  font-family: Shabnam-FD;
+  font-size: 15px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #000000;
+}
+
+.section5 .imgScroll {
+  overflow-x: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.section5 .imgScroll img {
+  width: 221.9px;
+  height: 157px;
+  margin-right: 20px;
+}
+
+.section5 .imgScroll img:nth-child(1) {
+  margin-right: 30px;
 }
 
 @media (min-width: 1032px) {
   .text {
     width: 100wh;
   }
+  .section3 {
+    background-image: url(../img/019_dlbox_Bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 768px) {
-  .text {
+  .section1.text {
     padding-top: 67px;
     margin-right: 25px;
   }
