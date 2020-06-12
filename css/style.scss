@@ -22,6 +22,16 @@ body {
   direction: rtl;
   // overflow-x:hidden ;
 }
+.spinner{
+ 
+  display: block;
+}
+.spinner-grow{
+  color:hsl(166, 96%, 33%) ;
+  height: 250px;
+  width: 250px;
+
+}
 
 .navbar {
   direction: ltr;
@@ -32,7 +42,7 @@ body {
 
 .header {
   .logo {
-    min-height:100px;
+    min-height: 100px;
     min-width: 306px;
     // background-image: url(../img/009_logo_Bg.png);
     // background-size: cover;
@@ -44,11 +54,9 @@ body {
     // align-items: center;
     color: $praimeryColor;
     .camel {
-      
       width: 72px;
       height: 72px;
       img {
-    
         height: 100%;
       }
     }
@@ -127,6 +135,9 @@ body {
     background-size: cover;
   }
   .row {
+    .d-flex {
+      overflow-x: scroll;
+    }
     .iconScroll {
       overflow-x: scroll;
       .iconsBorders {
@@ -138,13 +149,59 @@ body {
         margin: 20px;
         display: flex;
         @include flexCenter();
-        .icon {
-        }
+
       }
       .icon1 {
         width: 40px;
         height: 34px;
         opacity: 0.9;
+        .icon::before {
+          content: "\e90d";
+        }
+      }
+      .icon2 {
+        width: 21px;
+        height: 40px;
+      }
+      .icon3 {
+        width: 40px;
+        height: 24px;
+      }
+      .icon4 {
+        width: 40px;
+        height: 40px;
+
+        background-color: #ffffff;
+      }
+      .icon5 {
+        width: 39px;
+        height: 39px;
+      }
+      .icon6 {
+        width: 40px;
+        height: 37px;
+      }
+    }   
+     .asd2{
+
+      .iconsBorders {
+        min-width: 72px;
+        min-height: 72px;
+        border-radius: 50%;
+        border: 1px solid $praimeryColor;
+
+        margin: 20px;
+        display: flex;
+        @include flexCenter();
+
+      }
+      .icon1 {
+        width: 40px;
+        height: 34px;
+        opacity: 0.9;
+        .icon::before {
+          content: "\e90d";
+        }
       }
       .icon2 {
         width: 21px;
@@ -169,6 +226,7 @@ body {
         height: 37px;
       }
     }
+
     .phonMakeupfather {
       @include flexCenter();
       .phonMakeup {
@@ -252,18 +310,15 @@ body {
         color: #000000;
       }
       .inputButton {
-        @include flexCenter();
-        flex-direction: column;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding: 33px 0;
+        border-radius: 25px;
+        border: solid 1px #eeeeee;
+        background-color: #fafafa;
         input {
-          width: 290px;
-          height: 50px;
+          width: 100%;
+          height: 100%;
           border-radius: 25px;
-          border: solid 1px #eeeeee;
           background-color: #fafafa;
+          border: none;
           outline: none;
           margin-bottom: 21px;
         }
@@ -274,6 +329,8 @@ body {
           box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
           background-image: linear-gradient(to top, #e35325, #ff8a65);
           color: white;
+          border: none;
+          outline: none;
         }
       }
       p {
@@ -288,10 +345,8 @@ body {
         color: #000000;
       }
       .buttons {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        padding-right: 64px;
+        // transform: translateY(25px);// transform: translateY(25px);
 
         .btn1 {
           width: 160px;
@@ -301,6 +356,7 @@ body {
           background-image: linear-gradient(to top, #00a680, #00f4bd);
           outline: none;
           color: white;
+          border: none;
         }
         .btn2 {
           width: 160px;
@@ -310,6 +366,7 @@ body {
           background-image: linear-gradient(to top, #00a680, #00f4bd);
           outline: none;
           color: white;
+          border: none;
         }
         .btn3 {
           width: 160px;
@@ -319,6 +376,7 @@ body {
           background-image: linear-gradient(to top, #00a680, #00f4bd);
           outline: none;
           color: white;
+          border: none;
         }
       }
     }
@@ -340,7 +398,7 @@ body {
     h2 {
       font-family: Shabnam-FD;
       font-size: 24px;
-      font-weight: normal;
+      font-weight: 800;
       font-stretch: normal;
       font-style: normal;
       line-height: normal;
@@ -348,7 +406,8 @@ body {
       text-align: center;
       color: $praimeryColor;
     }
-    p {
+
+    span {
       font-family: Shabnam-FD;
       font-size: 15px;
       font-weight: 300;
@@ -365,8 +424,11 @@ body {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    padding-bottom: 10px;
 
     img {
+      border-radius: 12px;
+      box-shadow: 5px 5px 20px rgb(199, 199, 199);
       width: 221.9px;
       height: 157px;
 
@@ -389,6 +451,78 @@ body {
     background-size: cover;
   }
 }
+.section6 {
+  .col {
+    background-color: #e1fff8;
+    @include flexCenter();
+    flex-direction: column;
+    .textContainer2 {
+      @include flexCenter();
+      flex-direction: column;
+
+      p {
+        height: 17px;
+        font-family: Shabnam-FD;
+        font-size: 16px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000000;
+      }
+      .buttonInput {
+        width: 410px;
+        height: 50px;
+        padding: 0px;
+        border-radius: 25px;
+        box-shadow: 0px 4px 20px 0 rgba(0, 88, 67, 0.17);
+        background-color: #ffffff;
+        outline: none;
+        color: #9e9e9e;
+        input {
+          // padding:  5px 5px 5px 5px;
+          width: 100%;
+          height: 100%;
+          background-color: #ffffff;
+          outline: none;
+          border-radius: 25px;
+          border: none;
+          color: #9e9e9e;
+        }
+        button {
+          width: 140px;
+          height: 100%;
+          border: none;
+          border-radius: 25px;
+          background-image: linear-gradient(to top, #e35325, #ff8a65);
+          outline: none;
+        }
+      }
+    }
+.footerBg{
+  width: 100%;
+  height: 240px;
+  background-image: url(../img/025_footer_Bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+  }
+}
+c1 {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .section6 .col .textContainer2 .buttonInput{
+    width: 313px;
+  }
+}
+
+
+
 
 @media (min-width: 768px) {
   body {
@@ -402,19 +536,33 @@ body {
     position: absolute;
     // margin-right: 195px;
   }
+  .section6 .col {
+    background-color: #ffffff;
+  }
+  .section5 .text .span {
+    width: 902px;
+  }
+  .sction6 p {
+    width: 744px;
+  }
 }
 
-// @media (min-width: 768px) and (max-width: 991.98px) {
-//   .icon {
-//     margin-top: 80px;
-//   }
-// }
-
-// @media (max-width:768px ){
-//   .nav, .icon{
-//   display: none;
-//   }
-//   .header{
-//     flex-direction: column;
-//   }
-// }
+@media (min-width: 1000px) {
+  .buttons {
+    transform: translateY(35px);
+    button {
+      margin-bottom: 10px;
+    }
+  }
+}
+@media (max-width:1193px){
+  .buttons {  height: 243px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;}
+}
+@media(min-width:984px){
+.asd2{
+  display: none;
+}
+}
