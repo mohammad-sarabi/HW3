@@ -1,0 +1,63 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.eot");
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.eot?#iefix") format("embedded-opentype"), url("https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.woff2") format("woff2"), url("https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.woff") format("woff"), url("https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.ttf") format("truetype");
+  font-weight: normal;
+}
+
+.navbar button {
+  outline: none;
+}
+
+.navbar button .navbar-toggler-icon {
+  border-radius: 1.5px;
+}
+
+.navbar button .navbar-brand {
+  font-family: Shabnam-FD;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #007f62;
+}
+
+.navbar .fa-search {
+  color: #00a680;
+}
+
+.navbar ul {
+  font-family: Shabnam-FD;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.navbar ul .btn {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+          box-shadow: 0px 7px 20px 0 rgba(227, 84, 39, 0.3);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e35325), to(#ff8a65));
+  background-image: linear-gradient(to top, #e35325, #ff8a65);
+}
+
+body {
+  direction: rtl;
+  text-align: right;
+}
+/*# sourceMappingURL=new_style.css.map */
