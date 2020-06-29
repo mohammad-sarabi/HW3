@@ -4,7 +4,7 @@ const main = document.querySelector('.main');
 setTimeout(function () {
     spinner.style.display = 'none';
     main.style.display = 'block';
-}, 2000)
+}, 1500)
 // var myVar;
 
 // function myFunction() {
