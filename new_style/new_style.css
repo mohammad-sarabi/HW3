@@ -20,7 +20,6 @@ body {
 }
 
 .main {
-  display: none;
   margin: 0;
   padding: 0;
 }
@@ -602,15 +601,20 @@ body {
   color: white;
 }
 
-.section6 .footerBg .links .socialNetwork .fa-telegram {
+.section6 .footerBg .links .socialNetwork .socialTel .fa-telegram {
   color: #29b6f6;
 }
 
-.section6 .footerBg .links .socialNetwork .fa-instagram {
+.section6 .footerBg .links .socialNetwork .socialIn {
+  border: 1px #ec407a solid;
+  border-radius: 50%;
+}
+
+.section6 .footerBg .links .socialNetwork .socialIn .fa-instagram {
   color: #ec407a;
 }
 
-.section6 .footerBg .links .socialNetwork .fa-twitter-square {
+.section6 .footerBg .links .socialNetwork .socialTwit .fa-twitter-square {
   color: #29b6f6;
 }
 
@@ -620,6 +624,15 @@ body {
 
 .section6 .footerBg .links .textF .mail {
   color: white;
+}
+
+.section6 .footerMS {
+  width: 100%;
+  height: 260px;
+  background-image: url(../img/025_footer_Bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @media (max-width: 766px) {

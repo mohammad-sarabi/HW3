@@ -27,7 +27,7 @@ body {
   padding: 0;
 }
 .main {
-  display: none;
+  // display: none;
   margin: 0;
   padding: 0;
 }
@@ -430,7 +430,6 @@ body {
     color: #007f62;
   }
   .textcontainerS5 {
-
     font-family: Shabnam-FD;
     font-size: 16px;
     font-weight: 300;
@@ -575,14 +574,23 @@ body {
     }
     .links {
       .socialNetwork {
-        .fa-telegram {
-          color: #29b6f6;
+        .socialTel {
+
+          .fa-telegram {
+            color: #29b6f6;
+          }
         }
-        .fa-instagram {
-          color: #ec407a;
+        .socialIn {
+          border: 1px #ec407a solid ;
+          border-radius: 50%;
+          .fa-instagram {
+            color: #ec407a;
+          }
         }
-        .fa-twitter-square {
-          color: #29b6f6;
+        .socialTwit {
+          .fa-twitter-square {
+            color: #29b6f6;
+          }
         }
       }
       .textF {
@@ -594,6 +602,14 @@ body {
         }
       }
     }
+  }
+  .footerMS {
+    width: 100%;
+    height: 260px;
+    background-image: url(../img/025_footer_Bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 @media (max-width: 766px) {
