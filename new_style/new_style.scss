@@ -27,7 +27,7 @@ body {
   padding: 0;
 }
 .main {
-  // display: none;
+  display: none;
   margin: 0;
   padding: 0;
 }
@@ -84,10 +84,12 @@ body {
 .header {
   .row {
     .logo {
-      .bgLogo {
-        width: 100%;
-      }
-      div {
+      background-image: url(../img/009_logo_Bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 182px;
+      width: 100%;
+      .afd {
         span {
           font-family: Shabnam-FD;
           font-size: 24px;
@@ -161,18 +163,23 @@ body {
 }
 
 .section2 {
+  .waveS2 {
+    height: 272px;
+    background-image: url(../img/011_bg_wave.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
   .iconScroll1 {
+    overflow-x: scroll;
     .iconsBorders {
       border-radius: 50%;
       width: 50px;
       height: 50px;
-      border-style: solid;
-      border-width: 1px;
-      border-image-source: linear-gradient(to top, #00a680, #00f4bd);
+      border: 1px solid;
+      border-color: linear-gradient(to top, #00a680, #00f4bd);
       border-image-slice: 1;
-
       @include flexCenter();
-
       .icon {
         width: 35px;
         height: 29px;
@@ -193,9 +200,9 @@ body {
       border-radius: 50%;
       width: 50px;
       height: 50px;
-      border-style: solid;
-      border-width: 1px;
-      border-image-source: linear-gradient(to top, #00a680, #00f4bd);
+      border: 1px solid;
+      border-color: linear-gradient(to top, #00a680, #00f4bd);
+
       border-image-slice: 1;
       background-color: #ffffff;
       @include flexCenter();
@@ -405,7 +412,7 @@ body {
   }
   @media (min-width: 766px) {
     .readyFortrip {
-      transform: translateY(23px);
+      transform: translateY(43px);
     }
   }
 }
@@ -423,6 +430,7 @@ body {
     color: #007f62;
   }
   .textcontainerS5 {
+
     font-family: Shabnam-FD;
     font-size: 16px;
     font-weight: 300;
@@ -436,14 +444,14 @@ body {
   .imgScroll {
     overflow-x: scroll;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     padding-bottom: 10px;
     img {
       border-radius: 12px;
       box-shadow: 5px 5px 20px rgb(199, 199, 199);
-      width: 221.9px;
-      height: 157px;
+      width: 201.9px;
+      height: 135px;
       margin-right: 20px;
     }
   }
@@ -468,7 +476,7 @@ body {
       background-color: #fafafa;
       input {
         width: 100%;
-        direction: ltr;
+
         border-radius: 25px;
         background-color: #fafafa;
         border: none;
@@ -567,17 +575,22 @@ body {
     }
     .links {
       .socialNetwork {
-        .fa-telegram{
-
-          color: linear-gradient(to bottom, #29b6f6, #29b6f6), linear-gradient(to top, var(--black), var(--black)) ;
+        .fa-telegram {
+          color: #29b6f6;
         }
-        .fa-instagram{
-
-          color:  linear-gradient(to bottom, #ec407a, #ec407a), linear-gradient(to top, var(--black), var(--black));
-         }
-        .fa-twitter-square{
-
-          color:linear-gradient(to bottom, #29b6f6, #29b6f6), linear-gradient(to top, var(--black), var(--black));
+        .fa-instagram {
+          color: #ec407a;
+        }
+        .fa-twitter-square {
+          color: #29b6f6;
+        }
+      }
+      .textF {
+        .phone {
+          color: white;
+        }
+        .mail {
+          color: white;
         }
       }
     }
