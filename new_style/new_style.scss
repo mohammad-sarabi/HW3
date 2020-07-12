@@ -27,7 +27,7 @@ body {
   padding: 0;
 }
 .main {
-  // display: none;
+  display: none;
   margin: 0;
   padding: 0;
 }
@@ -575,14 +575,11 @@ body {
     .links {
       .socialNetwork {
         .socialTel {
-
           .fa-telegram {
             color: #29b6f6;
           }
         }
         .socialIn {
-          border: 1px #ec407a solid ;
-          border-radius: 50%;
           .fa-instagram {
             color: #ec407a;
           }
@@ -610,6 +607,24 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    font-family: Shabnam-FD;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: white;
+    .fa-telegram {
+      color: #29b6f6;
+    }
+    .fa-instagram {
+      color: #ec407a;
+    }
+    .fa-twitter-square {
+      color: #29b6f6;
+    }
   }
 }
 @media (max-width: 766px) {
